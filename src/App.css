@@ -40,7 +40,7 @@ header {
 }
 .nav-link {
   font-family: "Barlow", sans-serif;
-  font-size: 12px;
+  font-size: .75rem;
   font-weight: 700;
   line-height: 15px;
   opacity: 0.7;
@@ -58,7 +58,7 @@ header {
   font-size: 4.5rem;
   font-weight: 900;
   line-height: 72px;
-  width: 493px;
+  width: 30.8125rem;
   margin-left: 5.3125rem;
   padding-top: 7.3125rem;
 }
@@ -69,7 +69,7 @@ header {
   font-size: 1rem;
   font-weight: 400;
   line-height: 26px;
-  width: 445px;
+  width: 27.8125rem;
   margin-left: 5.3125rem;
   margin-top: 2rem;
   padding-bottom: 3.5rem;
@@ -81,9 +81,37 @@ header {
   color: white;
   font-family: 'Fraunces', sans-serif;
   border-radius: 6px;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 1.125rem;
   font-weight: 900;
   text-align: center;
+}
+.svg-collection {
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.contenedor-productos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+.imagen-producto {
+  width: 15.9375rem;
+}
+.producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.producto-texto {
+  font-family: 'Fraunces', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  text-align: center;
+  color: #333D4B;
 }

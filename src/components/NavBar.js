@@ -1,4 +1,5 @@
 import logo from '../assets/logo.svg';
+import { NavItem } from './NavItem';
 
 function NavBar () {
     return  (
@@ -7,10 +8,10 @@ function NavBar () {
             <img className="logo" src={logo} alt="logo"/>
             <nav className="nav-bar">
                 <ul className="nav-list">
-                    <li className="nav-item"><a href="#" className="nav-link">HOME</a></li>
-                    <li className="nav-item"><a href="#" className="nav-link">SOBRE NOSOTROS</a></li>
-                    <li className="nav-item"><a href="#" className="nav-link">COMPRAR CAFE ROASTER</a></li>
-                    <li className="nav-item"><a href="#" className="nav-link">CONTACTO</a></li>
+                    <NavItem text="HOME"/>
+                    <NavItem text="TIENDA"/>
+                    <NavItem text="SOBRE NOSOTROS"/>
+                    <NavItem text="CONTACTO"/>
                     <CartWidget />
                 </ul>
             </nav>
@@ -29,7 +30,5 @@ function CartWidget () {
         <li className="nav-item"><a href="#" className="nav-link"><i class="fas fa-shopping-cart carritoInicio"></i></a></li>
     )
 }
-
-
 
 export default NavBar;
