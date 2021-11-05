@@ -115,3 +115,44 @@ header {
   text-align: center;
   color: #333D4B;
 }
+.contenedor-counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem;
+}
+.cantidad {
+  padding: 5px;
+}
+.btnCantidad {
+  background-color: #0E8784;
+  border: none;
+  cursor: pointer;
+  padding: .25rem .625rem;
+  color: white;
+  font-size: 1.1rem;
+  font-family: 'Fraunces', sans-serif;
+}
+.btnAgregar {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 400;
+  border: none;
+  font-size: 1rem;
+  background: #FDD6BA;
+  padding: .25rem .625rem;
+  cursor: pointer;
+}
+.stock-disponible {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 400;
+  font-size: .75rem;
+  padding: .5rem;
+}

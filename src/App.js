@@ -14,10 +14,10 @@ function App() {
     <NavBar />
     <OurCollection />
     <div className="contenedor-productos">
-      <ItemListContainer image={Espresso} producto="Gran Espresso"/>
-      <ItemListContainer image={danche} producto="Danche"/>
-      <ItemListContainer image={planalto} producto="Planalto"/>
-      <ItemListContainer image={piccollo} producto="Piccollo"/>
+      <ItemListContainer image={Espresso} producto="Gran Espresso" stock={12}/>
+      <ItemListContainer image={danche} producto="Danche" stock={0}/>
+      <ItemListContainer image={planalto} producto="Planalto" stock={4}/>
+      <ItemListContainer image={piccollo} producto="Piccollo" stock={11}/>
     </div>
     </>
   );
