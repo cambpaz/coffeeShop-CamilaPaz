@@ -1,14 +1,40 @@
-import React from 'react';
-import { ItemCount } from './ItemCount';
+import React, { useEffect, useState } from 'react';
+import Item from './Item';
 
-export const ItemListContainer = ({image, producto, stock}) => {
+const ItemListContainer = ({productosLista}) => {
+    const [productos, setListaProductos] = useState([]);
+
+    useEffect(() => {
+        function traerProductos(timeout, data) {
+            return new Promise ((res, rej) => {
+                if (productosLista.length > 0) {
+                    setTimeout(() => {
+                        res(data);
+                    }, timeout)
+                } else {
+                    rej("Error! No hay productos.");
+                }
+            })
+        }
+        traerProductos(2000, productosLista)
+            .then(() => { setListaProductos(productosLista)})
+            .catch((err) => console.log(err))
+    }, [])
+
     return (
         <>
-            <div className="producto">
-                <img className="imagen-producto" src={image} alt={producto}/>
-                <p className="producto-texto">{producto}</p>
-                <ItemCount producto={producto} stock={stock}/>
-            </div>
+        {
+            productos.map((producto, index) => 
+            <Item 
+            key={index}
+            product={producto.product}
+            price={producto.price}
+            image={producto.image}
+            stock={producto.stock}
+            />
+            )
+        }
         </>
     )
 }
+export default ItemListContainer;

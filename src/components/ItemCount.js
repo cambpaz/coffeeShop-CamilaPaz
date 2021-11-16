@@ -26,7 +26,7 @@ export const ItemCount = ({stock, producto}) => {
     }
     return (
         <div className="contenedor-counter">
-            <div class="counter">
+            <div className="counter">
                 <button onClick={eliminarCantidad} className="btnCantidad">-</button>
                 {
                     stock > 0 ? 
