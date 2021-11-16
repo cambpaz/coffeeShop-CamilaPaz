@@ -12,7 +12,9 @@ const ItemListContainer = ({productosLista}) => {
                         res(data);
                     }, timeout)
                 } else {
-                    rej("Error! No hay productos.");
+                    setTimeout(() => {
+                        rej("Error! No hay productos.");
+                    }, timeout);
                 }
             })
         }

@@ -3,7 +3,7 @@ import './App.css';
 import ItemListContainer  from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 import { OurCollection } from './components/OurCollection';
-import {data} from './data';
+import { data } from './data';
 
 function App() {
 
