@@ -1,8 +1,8 @@
 
 import './App.css';
-import ItemListContainer  from './components/ItemListContainer';
-import NavBar from './components/NavBar';
-import { OurCollection } from './components/OurCollection';
+import ItemListContainer  from './components/products/ItemListContainer.js';
+import NavBar from './components/navBar/NavBar';
+import { OurCollection } from './utils/OurCollection';
 import { data } from './data';
 
 function App() {

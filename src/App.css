@@ -46,7 +46,7 @@ header {
   opacity: 0.7;
 }
 .hero-section {
-  background-image: url(../src/assets/image-hero-coffeepress.jpg);
+  background-image: url(./image-hero-coffeepress.jpg);
   height: 80vh;
   background-size: cover;
   margin: 0 5rem;
