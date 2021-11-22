@@ -1,0 +1,127 @@
+[
+    {
+        "id": 1,
+        "product": "Gran Espresso",
+        "price": 200,
+        "stock": 100,
+        "idCategory": 1,
+        "image": "/assets/image-gran-espresso.png", 
+        "description": "Cafe en granos de alta calidad"
+    },
+    {
+        "id": 2,
+        "product": "Danche",
+        "price": 200,
+        "stock": 100,
+        "idCategory": 1,
+        "image": "/assets/image-danche.png",
+        "description": "Cafe en granos de alta calidad",
+        "category": {
+            "id": 1,
+            "categoryName": "Cafe en Granos"
+        }
+    },
+    {
+        "id": 3,
+        "product": "Planalto",
+        "price": 200,
+        "stock": 100,
+        "idCategory": 1,
+        "image": "/assets/image-planalto.png",
+        "description": "Cafe en granos de alta calidad",
+        "category": {
+            "id": 1,
+            "categoryName": "Cafe en Granos"
+        }
+    },
+    {
+        "id": 4,
+        "product": "Piccollo",
+        "price": 200,
+        "stock": 100,
+        "idCategory": 1,
+        "image": "/assets/image-piccollo.png",
+        "description": "Cafe en granos de alta calidad",
+        "category": {
+            "id": 1,
+            "categoryName": "Cafe en Granos"
+        }
+    },
+    {
+        "id": 5,
+        "product": "Espumador",
+        "price": 200,
+        "stock": 100,
+        "idCategory": 2,
+        "image": "./assets/espumador.jpeg",
+        "description": "Prepara deliciosa espuma de leche tanto fría como caliente para tus cafés y chocolate con leche o, simplemente calienta la leche para tus desayunos y meriendas de manera cómoda y sencilla. El espumador ajusta su funcionamiento dependiendo del volumen de líquido y de la temperatura original de este. Puedes usar leche de soja sin ningún problema, la espuma quedará perfecta.",
+        "category":{
+            "id": 2,
+            "categoryName": "Accesorios de cocina"
+        }
+    },
+    {
+        "id": 6,
+        "product": "Coffee Grinder",
+        "price": 200,
+        "stock": 100,
+        "idCategory": 2,
+        "image": "/assets/coffeeGrinder.jpeg",
+        "description": "Disfruta del sabor y el aroma del café recién molido con sus cuchillas de acero inoxidable, para un molido fino y preciso. Incorpora un novedoso sistema de seguridad que impide que el aparato comience a funcionar si la tapa no se ha cerrado bien. Tiene una gran capacidad: hasta 75 gramos de café en grano, por lo que podrás moler café para varias tazas sin problemas. Fácil de guardar en cualquier sitio, ya que tiene unas dimensiones muy reducidas: 9 centímetros de diámetro y 17 de altura",
+        "category":{
+            "id": 2,
+            "categoryName": "Accesorios de cocina"
+        }
+    },
+    {
+        "id": 7,
+        "product": "Cafetera Express - Crema",
+        "price": 200,
+        "stock": 100,
+        "idCategory": 3,
+        "image": "/assets/cafetera-crema.jpeg",
+        "description": "Cafetera express para preparar cafés de autor en casa. Su brazo vaporizador te permite espumar la leche para hacer cafés cremosos como los de un barista profesional. Característica por su diseño retro disponible en varios colores.",
+        "category":{
+            "id": 3,
+            "categoryName": "Cafeteras"
+        }
+    },
+    {
+        "id": 8,
+        "product": "Cafetera Express - Oliva",
+        "price": 200,
+        "stock": 100,
+        "idCategory": 3,
+        "image": "/assets/cafetera-verde.jpeg",
+        "description": "Cafetera express para preparar cafés de autor en casa. Su brazo vaporizador te permite espumar la leche para hacer cafés cremosos como los de un barista profesional. Característica por su diseño retro disponible en varios colores.",
+        "category":{
+            "id": 3,
+            "categoryName": "Cafeteras"
+        }
+    },
+    {
+        "id": 9,
+        "product": "Recipiente de vidrio",
+        "price": 200,
+        "stock": 100,
+        "idCategory": 2,
+        "image": "/assets/recipiente-cafe.jpeg",
+        "category":{
+            "id": 2,
+            "categoryName": "Accesorios de cocina"
+        }
+    },
+    {
+        "id": 10,
+        "product": "Saborizante Vainilla",
+        "price": 200,
+        "stock": 100,
+        "idCategory": 4,
+        "image": "/assets/saborizante-vainilla.jpeg",
+        "description": "Perfecto para endulzar tus Lattes. La alternativa al azúcar con tus sabores favoritos. Sin conservantes, ni colorantes, hecho a base de algarroba. Sabores disponibles: Avellana, Canela, Coco y Vainilla. Contenido neto 250ml.",
+        "category":{
+            "id": 4,
+            "categoryName": "Saborizantes"
+        }
+    }
+]

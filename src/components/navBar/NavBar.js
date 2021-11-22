@@ -21,13 +21,13 @@ function NavBar () {
             <p className="hero-text">Nada mejor mejor que un buen café para comenzar el día. 
             Probá nuestros Roasters, un café de artesano cultivado en las cordilleras de Africa. 
             Un café de altura.</p>
-            <a className="boton-hero">Quiero un Roaster</a>
+            <p className="boton-hero">Quiero un Roaster</p>
         </div>
         </>
 )}
 function CartWidget () {
     return (
-        <li className="nav-item"><a className="nav-link"><i class="fas fa-shopping-cart carritoInicio"></i></a></li>
+        <li className="nav-item"><p className="nav-link"><i className="fas fa-shopping-cart carritoInicio"></i></p></li>
     )
 }
 

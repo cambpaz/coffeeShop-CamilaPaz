@@ -1,21 +1,7 @@
-
-import './App.css';
-import ItemListContainer  from './components/products/ItemListContainer.js';
-import NavBar from './components/navBar/NavBar';
-import { OurCollection } from './utils/OurCollection';
-import { data } from './data';
+import Home from './pages'
 
 function App() {
-
-  return (
-    <>
-    <NavBar />
-    <OurCollection />
-    <div className="contenedor-productos">
-      <ItemListContainer productosLista={data}/>
-    </div>
-    </>
-  );
+  return <Home />
 }
 
 export default App;

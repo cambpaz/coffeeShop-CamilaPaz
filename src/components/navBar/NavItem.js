@@ -4,7 +4,7 @@ export const NavItem = ({text}) => {
     return (
         <>
             <li className="nav-item">
-                <a className="nav-link">{text}</a>
+                <p className="nav-link">{text}</p>
             </li>
         </>
     )

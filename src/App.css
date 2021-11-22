@@ -44,6 +44,7 @@ header {
   font-weight: 700;
   line-height: 15px;
   opacity: 0.7;
+  cursor: pointer;
 }
 .hero-section {
   background-image: url(./image-hero-coffeepress.jpg);
@@ -84,6 +85,7 @@ header {
   font-size: 1.125rem;
   font-weight: 900;
   text-align: center;
+  width: fit-content;
   cursor: pointer;
 }
 .svg-collection {
@@ -123,7 +125,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .counter {
@@ -158,4 +159,29 @@ header {
   font-weight: 400;
   font-size: .75rem;
   padding: .5rem;
+}
+
+.contenedor-detalles {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+.contenedor-detalles img {
+  width: 600px;
+  margin-right: 5rem;
+}
+.contenedor-detalles h2 {
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+.contenedor-detalles p {
+  font-size: 25px;
+  margin: 2rem;
+}
+.contenedor-categorias {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem;
+  font-family: 'Fraunces', sans-serif;
+  font-size: 1.5625rem;
 }
