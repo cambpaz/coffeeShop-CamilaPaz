@@ -9,15 +9,11 @@ import ItemDetail from "./ItemDetailPage"
 const ItemDetailContainer = () => {
     const [detail, setDetail] = useState([]);
     const { itemID } = useParams();
-    let data = []
 
     useEffect(() => {
         getData()
         .then(res => {
-            data = res;
-            data.find(item => 
-                item.id === itemID)
-                console.log(data);
+            let data = res.find(item => item.id === parseInt(itemID))
             setDetail(data)
         })
     }, [])

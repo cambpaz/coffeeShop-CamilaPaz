@@ -6,7 +6,11 @@
         "stock": 100,
         "idCategory": 1,
         "image": "/assets/image-gran-espresso.png", 
-        "description": "Cafe en granos de alta calidad"
+        "description": "Cafe en granos de alta calidad",
+        "category": {
+            "id": 1,
+            "categoryName": "Cafe en Granos"
+        }
     },
     {
         "id": 2,
