@@ -7,7 +7,7 @@ function NavBar () {
     return  (
         <>
         <header>
-            <img className="logo" src={logo} alt="logo"/>
+            <Link to="/"><img className="logo" src={logo} alt="logo"/></Link>
             <nav className="nav-bar">
                 <ul className="nav-list">
                     <Link to="/"><NavItem text="HOME"/></Link>
