@@ -5,6 +5,7 @@ import imageDanche from '../image-danche.png';
 import imagePiccollo from '../image-piccollo.png';
 import imageGranEspresso from '../image-gran-espresso.png';
 import imagePlanalto from '../image-danche.png';
+import { Link } from 'react-router-dom';
 
 
 const Hero = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
                 <p className="hero-text">Nada mejor mejor que un buen café para comenzar el día.
                     Probá nuestros Roasters, un café de artesano cultivado en las cordilleras de Africa.
                     Un café de altura.</p>
-                <p className="boton-hero">Quiero un Roaster</p>
+                <Link to="/shop"><p className="boton-hero">Quiero un Roaster</p></Link>
             </div>
             <OurCollection />
             <div className="contenedor-productos">

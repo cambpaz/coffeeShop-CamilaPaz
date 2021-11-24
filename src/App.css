@@ -129,12 +129,13 @@ header {
 
 .counter {
   display: flex;
-  justify-content: space-between;
   width: 100%;
-  margin: 1rem;
+  justify-content: center;
+  margin: 2rem;
 }
 .cantidad {
   padding: 5px;
+  margin: 0 5rem 0 5rem ;
 }
 .btnCantidad {
   background-color: #0E8784;
@@ -196,7 +197,7 @@ header {
 .producto-descripcion {
   height: 78px;
   width: 255px;
-  font-family: Barlow;
+  font-family: 'Barlow', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -205,7 +206,7 @@ header {
   margin-top: 1.5rem;
 }
 .checkout {
-  font-family: Barlow;
+  font-family: 'Barlow', sans-serif;
   background-color: #0E8784;
   border: none;
   cursor: pointer;

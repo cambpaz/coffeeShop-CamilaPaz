@@ -16,7 +16,7 @@
         "id": 2,
         "product": "Danche",
         "price": 200,
-        "stock": 100,
+        "stock": 0,
         "idCategory": 1,
         "image": "/assets/image-danche.png",
         "description": "Cafe en granos de alta calidad",
@@ -57,7 +57,7 @@
         "price": 200,
         "stock": 100,
         "idCategory": 2,
-        "image": "./assets/espumador.jpeg",
+        "image": "/assets/espumador.jpeg",
         "description": "Prepara deliciosa espuma de leche tanto fría como caliente para tus cafés y chocolate con leche o, simplemente calienta la leche para tus desayunos y meriendas de manera cómoda y sencilla. El espumador ajusta su funcionamiento dependiendo del volumen de líquido y de la temperatura original de este. Puedes usar leche de soja sin ningún problema, la espuma quedará perfecta.",
         "category":{
             "id": 2,
