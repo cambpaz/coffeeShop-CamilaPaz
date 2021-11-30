@@ -10,7 +10,7 @@ const ProductContainer = () => {
     const { categoryID } = useParams();
 
     useEffect(() => {
-        getData(categoryID)
+        getData(parseInt(categoryID))
             .then(res => setListaProductos(res))
             .catch(err => console.log(err))
     }, [categoryID])
