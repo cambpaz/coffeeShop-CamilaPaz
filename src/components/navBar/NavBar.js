@@ -1,6 +1,8 @@
 import logo from './../../logo.svg';
 import { NavItem } from './NavItem';
 import { Link } from 'react-router-dom'
+import { useContext } from 'react';
+import { CartContext } from '../cart/CartContext';
 
 
 function NavBar () {
@@ -21,8 +23,9 @@ function NavBar () {
         </>
 )}
 function CartWidget () {
+    const context = useContext(CartContext)
     return (
-        <li className="nav-item"><p className="nav-link"><i className="fas fa-shopping-cart carritoInicio"></i></p></li>
+        <li className="nav-item "><p className="nav-link cartWidget"><i className="fas fa-shopping-cart carritoInicio"></i><p>{context.cantidadItems()}</p></p></li>
     )
 }
 

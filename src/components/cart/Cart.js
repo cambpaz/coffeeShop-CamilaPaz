@@ -22,6 +22,7 @@ const Cart = () => {
                         id={item.idProduct}
                         qty={item.qtyProduct}
                         deleteProduct={context.deleteProduct}
+                        totalPerProduct={context.totalPerProduct}
                     />
                 )
             }
@@ -33,6 +34,15 @@ const Cart = () => {
                 : <div className="center"><button className="btnCantidad" onClick={() => context.emptyCart()}>VACIAR CARRITO</button></div>
                 }
             </div>
+            <div>
+                {
+                context.cart.length !== 0 
+                ? <div className="ordenSummary"><p>Subtotal: ${context.subTotal()}</p><p>Descuento online: -${context.onlineDiscount()}</p><h4>TOTAL: ${context.totalPurchase()} </h4></div>
+                : <p></p>
+                    
+                }
+            </div>
+            
         </>
     )
 }
