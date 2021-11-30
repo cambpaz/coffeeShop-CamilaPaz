@@ -37,7 +37,7 @@ const Cart = () => {
             <div>
                 {
                 context.cart.length !== 0 
-                ? <div className="ordenSummary"><p>Subtotal: ${context.subTotal()}</p><p>Descuento online: -${context.onlineDiscount()}</p><h4>TOTAL: ${context.totalPurchase()} </h4></div>
+                ? <div className="ordenSummary"><p>Subtotal: ${context.subTotal()}</p><p>Descuento online: -${context.onlineDiscount()}</p><h4>TOTAL: ${context.totalPurchase()} </h4><button className="btnCantidad">TERMINAR MI COMPRA</button></div>
                 : <p></p>
                     
                 }
