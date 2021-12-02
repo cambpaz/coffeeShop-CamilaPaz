@@ -27,12 +27,12 @@ function CartWidget() {
     const context = useContext(CartContext)
     return (
         <li className="nav-item ">
-            <p className="nav-link cartWidget">
+            <div className="nav-link cartWidget">
                 <i className="fas fa-shopping-cart carritoInicio"></i>
                 {
                 context.cart.length !== 0 && <p>{context.cantidadItems()}</p>
                 }
-            </p></li>
+            </div></li>
     )
 }
 

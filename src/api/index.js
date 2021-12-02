@@ -3,6 +3,7 @@ import db from '../utils/firebaseConfig'
 import { query, where, collection, getDocs } from '@firebase/firestore';
 import { doc, getDoc } from "firebase/firestore";
 
+//me trae todo los productos
 export const getData = async (categoryID) => {
     let q;
     if (categoryID) {
@@ -17,7 +18,7 @@ export const getData = async (categoryID) => {
     }));
     return dataFromFirestore;
 }
-
+//me trae un solo item
 export const getDetail = async (itemID) => {
     const docRef = doc(db, "products", itemID);
     const docSnap = await getDoc(docRef);

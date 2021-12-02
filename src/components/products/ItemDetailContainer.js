@@ -10,8 +10,6 @@ const ItemDetailContainer = () => {
     const [detail, setDetail] = useState([]);
     const { itemID } = useParams();
 
-    console.log(typeof(itemID));
-
     useEffect(() => {
         getDetail(itemID)
         .then(res => setDetail(res))
