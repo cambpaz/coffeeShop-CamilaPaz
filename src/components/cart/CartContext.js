@@ -26,7 +26,7 @@ const CartContextProvider = ({children}) => {
             if (confirmacion) {
                 foundItem.qtyProduct += cantidad;
                 setCart([...cart])
-                alert("Se agrego al carrito" + cantidad + ` de ${product.product}`);
+                alert("Se agrego al carrito " + cantidad + ` de ${product.product}`);
             }
         }
     }
