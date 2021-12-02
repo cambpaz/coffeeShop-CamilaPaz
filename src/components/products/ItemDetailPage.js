@@ -9,7 +9,6 @@ const ItemDetail = ({data}) => {
 
     const onAdd = (cantidad) => {
         if (data.stock > 0) {
-            alert(`Se agrego al carrito ${cantidad} de ${data.product}`);
             setCount(cantidad);
             context.addToCart(data, cantidad);
         } else {

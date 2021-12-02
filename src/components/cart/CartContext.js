@@ -20,8 +20,19 @@ const CartContextProvider = ({children}) => {
                     qtyProduct: cantidad
                 }
             ]);
+            alert("Se agrego al carrito " + cantidad + ` de ${product.product}`);
         } else {
-            foundItem.qtyProduct += cantidad;
+            let confirmacion = window.confirm('Ya tienes este producto en tu carrito, quieres agregar otro?')
+            if (confirmacion) {
+                let valorAgregado = foundItem.qtyProduct += cantidad;
+                for (let carritoItem in cart) {
+                    if (cart[carritoItem].idProduct === product.id) {
+                        cart[carritoItem].qtyProduct = valorAgregado;
+                    }
+                }
+                setCart([...cart])
+            alert("Se agrego al carrito" + cantidad + ` de ${product.product}`);
+            }
         }
     }
     // FUNCION PARA VACIAR EL CARRITO
