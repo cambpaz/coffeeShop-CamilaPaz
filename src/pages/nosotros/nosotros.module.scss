@@ -1,0 +1,71 @@
+.heroContainer {
+    background-image: url(../../assets/image-hero-whitecup.jpg);
+    height: 80vh;
+    background-size: cover;
+    margin: 0 5rem;
+    border-radius: 1rem;
+
+    & h2 {
+        margin-bottom: 2rem;
+    }
+
+    & p {
+        width: 27.8125rem;
+    }
+}
+
+.qualityContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 256px 86px 0 86px;
+    height: 474px;
+    background-image: url(../../assets/bg-quality.png);
+    background-size: cover;
+    border-radius: 15px;
+    & img {
+        transform: translateY(-100px);
+        border-radius: 5px;
+    }
+
+    & p {
+        width: 33.75rem;
+    }
+}
+.headqContainer {
+    margin: 5rem 0;
+    & h3 {
+        font-family: Fraunces;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+        color: rgba(131, 136, 143, 1);
+        margin-left: 5rem;
+        text-align: center;
+        margin-bottom: 4.5rem;
+    }
+}
+.containerCountries {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.containerCountry {
+    & h4 {
+        font-family: 'Fraunces', sans-serif;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 36px;
+        color: rgba(51, 61, 75, 1);
+        margin: 1.5rem 0;
+    }
+
+    & p {
+        font-family: 'Barlow', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgba(51, 61, 75, 1);
+    }
+}

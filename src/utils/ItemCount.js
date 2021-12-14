@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
+import Modals from '../components/modal/Modals';
 
 export const ItemCount = ({stock, producto, onAdd}) => {
     const [cantidad, setCantidad] = useState(1)
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
 
     const agregarCantidad = () => {
         if (cantidad < stock) {
@@ -9,7 +13,8 @@ export const ItemCount = ({stock, producto, onAdd}) => {
         } else if (cantidad === stock) {
             alert(`Solo tenemos disponible ${stock} de ${producto}`)
         } else {
-            alert("No hay stock de este producto")
+            setShow(true);
+            // alert('no hay stock')
         }
     }
     const eliminarCantidad = () => {
@@ -28,7 +33,14 @@ export const ItemCount = ({stock, producto, onAdd}) => {
                 } 
                 <button onClick={agregarCantidad} className="btnCantidad">+</button>
             </div>
-            <button className="btnAgregar" onClick={() => onAdd(cantidad)}>Agregar al carrito</button>
+            <button className="btnCarrito" onClick={() => onAdd(cantidad)}>Agregar al carrito</button>
+            <div>
+                {
+                    show === true
+                    ? <Modals show={show} handleClose={handleClose}/>
+                    : <div></div>
+                }
+            </div>
         </div>
     )
 }

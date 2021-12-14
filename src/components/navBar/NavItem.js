@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import {navItem} from './navbar.module.scss'
 
 export const NavItem = ({text}) => {
     return (
         <>
-            <li className="nav-item">
-                <p className="nav-link">{text}</p>
+            <li className={navItem}>
+                <p>{text}</p>
             </li>
         </>
     )

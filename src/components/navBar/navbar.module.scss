@@ -1,0 +1,38 @@
+.logoImg {
+    width: 14.75rem;
+    height: 1.625rem;
+    margin: 2.7225rem;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5rem;
+}
+
+.navItem {
+    padding: 3.125rem 2.0625rem;
+
+    & p {
+        font-family: "Barlow", sans-serif;
+        font-size: .8rem;
+        font-weight: 700;
+        line-height: 15px;
+        opacity: 0.7;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+.cartWidget {
+    display: flex;
+    opacity: 0.7;
+    & p {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+}

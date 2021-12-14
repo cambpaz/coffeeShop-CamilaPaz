@@ -1,0 +1,48 @@
+.containerProducts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    & img {
+        width: 15.9375rem;
+        height: 13.75rem;
+    } 
+    & p {
+        font-family: 'Fraunces', sans-serif;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+        text-align: center;
+        color: #333D4B;
+        padding: .8rem;
+    }
+}
+.contenedorDetalles {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    text-align: center;
+    & img {
+        width: 600px;
+        margin-right: 5rem;
+    }
+    & h2 {
+        font-size: 2.5rem;
+        margin: 2rem;
+        font-family: 'Fraunces', sans-serif;
+        color: rgba(51, 61, 75, 1);
+    }
+    & p {
+        font-family: Barlow;
+        font-size: 25px;
+        margin: 2rem;
+    }
+}

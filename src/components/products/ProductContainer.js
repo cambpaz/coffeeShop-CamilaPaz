@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router';
 import { getData } from '../../api';
-import CategoryBar from '../../utils/CategoryBar';
+import CategoryBar from '../categoryBar/CategoryBar';
 import ProductList from './ProductMap';
+import { containerProducts } from './products.module.scss'
 
 
 const ProductContainer = () => {
@@ -17,7 +18,7 @@ const ProductContainer = () => {
     return (
         <div>
             <CategoryBar />
-            <div className="contenedor-productos">
+            <div className={containerProducts}>
                 <ProductList productosLista={productos} />
             </div>
         </div>

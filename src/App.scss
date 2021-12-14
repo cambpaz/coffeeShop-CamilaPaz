@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FEFCF7;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none!important;
+    color: black!important;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 12vh;
+}
+
+.title-text {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 48px;
+}
+
+.hero-title {
+    color: white;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 72px;
+    width: 30.8125rem;
+    margin-left: 5.3125rem;
+    padding-top: 7.3125rem;
+}
+
+.hero-text {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-left: 5.3125rem;
+    margin-top: 2rem;
+    padding-bottom: 3.5rem;
+}
+
+.subtitle {
+    font-family: Fraunces;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    color: white;
+    margin-left: 5.3125rem;
+    padding-top: 7.3125rem;
+}
+
+.svg-collection {
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.boton-azul {
+    background-color: #0E8784;
+    margin-left: 5.3125rem;
+    padding: .9375rem 1.5375rem;
+    color: white;
+    border: none;
+    font-family: 'Fraunces', sans-serif;
+    border-radius: 6px;
+    font-size: 1.125rem;
+    font-weight: 900;
+    text-align: center;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.category {
+    padding: 2rem;
+}
+
+.category.active {
+    font-size: 1.45rem;
+    text-decoration: underline;
+}
+
+.btnRosa {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 400;
+    border: none;
+    font-size: 1rem;
+    background: #FDD6BA;
+    padding: .25rem .625rem;
+    cursor: pointer;
+}
+
+.btnCantidad {
+    background-color: #0E8784;
+    border: none;
+    cursor: pointer;
+    padding: .25rem .625rem;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Fraunces', sans-serif;
+}
+
+.btnCarrito {
+    background-color: #0E8784;
+    border: none;
+    cursor: pointer;
+    padding: .45rem .625rem;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Fraunces', sans-serif;
+    border-radius: 2px;
+  }

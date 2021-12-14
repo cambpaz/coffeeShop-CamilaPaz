@@ -1,125 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background: #FEFCF7;
-}
-ul li {
-  list-style-type: none;
-}
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 12vh;
-}
-.logo {
-  width: 14.75rem;
-  height: 1.625rem;
-  margin: 2.7225rem;
-}
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  margin-right: 5rem;
-}
-.nav-item:last-child {
-  padding-right: 0;
-}
-.nav-item {
-  padding: 3.125rem 2.0625rem;
-
-}
-.nav-link {
-  font-family: "Barlow", sans-serif;
-  font-size: .75rem;
-  font-weight: 700;
-  line-height: 15px;
-  opacity: 0.7;
-  cursor: pointer;
-}
-.hero-section {
-  background-image: url(./image-hero-coffeepress.jpg);
-  height: 80vh;
-  background-size: cover;
-  margin: 0 5rem;
-  border-radius: 1rem;
-}
-.hero-title {
-  color: white;
-  font-family: 'Fraunces', sans-serif;
-  font-size: 4.5rem;
-  font-weight: 900;
-  line-height: 72px;
-  width: 30.8125rem;
-  margin-left: 5.3125rem;
-  padding-top: 7.3125rem;
-}
-
-.hero-text {
-  color: white;
-  font-family: 'Barlow', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 26px;
-  width: 27.8125rem;
-  margin-left: 5.3125rem;
-  margin-top: 2rem;
-  padding-bottom: 3.5rem;
-}
-.boton-hero {
-  background-color: #0E8784;
-  margin-left: 5.3125rem;
-  padding: .9375rem 1.9375rem;
-  color: white;
-  font-family: 'Fraunces', sans-serif;
-  border-radius: 6px;
-  font-size: 1.125rem;
-  font-weight: 900;
-  text-align: center;
-  width: fit-content;
-  cursor: pointer;
-}
-.svg-collection {
-  margin-right: auto;
-  margin-left: auto;
-  width: fit-content;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
-}
-.contenedor-productos {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-bottom: 4rem;
-}
-.imagen-producto {
-  width: 15.9375rem;
-}
-.producto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem;
-}
-
-.producto-texto {
-  font-family: 'Fraunces', sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 32px;
-  text-align: center;
-  color: #333D4B;
-}
 .contenedor-counter {
   display: flex;
   flex-direction: column;
@@ -137,25 +16,8 @@ header {
   padding: 5px;
   margin: 0 5rem 0 5rem ;
 }
-.btnCantidad {
-  background-color: #0E8784;
-  border: none;
-  cursor: pointer;
-  padding: .25rem .625rem;
-  color: white;
-  font-size: 1.1rem;
-  font-family: 'Fraunces', sans-serif;
-}
 
-.btnCarrito {
-  background-color: #0E8784;
-  border: none;
-  cursor: pointer;
-  padding: .25rem .625rem;
-  color: white;
-  font-size: 1.1rem;
-  font-family: 'Fraunces', sans-serif;
-}
+
 .center {
   display: flex;
   justify-content: center;
@@ -163,15 +25,7 @@ header {
   width: 100%;
   margin-top: 2rem;
 }
-.btnAgregar {
-  font-family: 'Fraunces', sans-serif;
-  font-weight: 400;
-  border: none;
-  font-size: 1rem;
-  background: #FDD6BA;
-  padding: .25rem .625rem;
-  cursor: pointer;
-}
+
 .stock-disponible {
   font-family: 'Fraunces', sans-serif;
   font-weight: 400;
@@ -193,8 +47,7 @@ header {
   margin: 2rem;
 }
 .contenedor-detalles p {
-  font-size: 25px;
-  margin: 2rem;
+
 }
 .contenedor-categorias {
   display: flex;
@@ -203,13 +56,6 @@ header {
   font-size: 1.25rem;
   background: rgba(253, 214, 186, 1);
   width: 100%;
-}
-.category {
-  padding: 2rem;
-}
-.category.active {
-  font-size: 1.45rem;
-  text-decoration: underline;
 }
 .producto-descripcion {
   height: 78px;
@@ -275,14 +121,42 @@ header {
   font-size: 1.5rem;
   font-family: 'Barlow', sans-serif;
 }
-.cartWidget {
-  display: flex;
-}
-.cartWidget p {
-  padding-left: 10px;
-  font-size: 15px;
-}
+
 .btnCantidad:hover {
   transform: scale(1.1);
   transition: all 1s;
+}
+
+.hero-aboutUs {
+  background-image: url(../src/assets/image-hero-whitecup.jpg);
+  height: 80vh;
+  background-size: cover;
+  margin: 0 5rem;
+  border-radius: 1rem;
+}
+.container-commitment {
+  display: flex;
+  margin: 10.5rem;
+}
+.container-commitment img {
+  height: 520px;
+  width: 445px;
+  border-radius: 5px;
+}
+.text-commitment {
+  margin: 7.8125rem;
+}
+.text-commitment h3 {
+  font-family: 'Fraunces', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 48px;
+  margin-bottom: 32px;
+}
+.text-commitment p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+
 }

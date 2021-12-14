@@ -4,6 +4,7 @@ export const CartContext = createContext();
 
 const CartContextProvider = ({children}) => {
     const [cart, setCart] = useState([]);
+    const [show, setShow] = useState(false);
     let reducer = function(acumulador, currentValue) {return acumulador + currentValue};
 
     // FUNCION PARA AGREGAR AL CARRITO
@@ -22,6 +23,7 @@ const CartContextProvider = ({children}) => {
             ]);
             alert("Se agrego al carrito " + cantidad + ` de ${product.product}`);
         } else {
+            setShow(true);
             let confirmacion = window.confirm('Ya tienes este producto en tu carrito, quieres agregar otro?')
             if (confirmacion) {
                 foundItem.qtyProduct += cantidad;
@@ -29,6 +31,9 @@ const CartContextProvider = ({children}) => {
                 alert("Se agrego al carrito " + cantidad + ` de ${product.product}`);
             }
         }
+    }
+    const showModal = () => {
+        setShow(true)
     }
     // FUNCION PARA VACIAR EL CARRITO
     const emptyCart = () => {
@@ -68,7 +73,7 @@ const CartContextProvider = ({children}) => {
         return cantidad.reduce(reducer, 0)
     }
     return (
-        <CartContext.Provider value={{cart, addToCart, deleteProduct, emptyCart, totalPerProduct, subTotal, onlineDiscount, totalPurchase, cantidadItems }}>
+        <CartContext.Provider value={{cart, addToCart, deleteProduct, emptyCart, totalPerProduct, subTotal, onlineDiscount, totalPurchase, cantidadItems, showModal }}>
             {children}
         </CartContext.Provider>
     )

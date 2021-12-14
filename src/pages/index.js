@@ -1,12 +1,15 @@
 import React from 'react'
 import './../App.css';
+import './../App.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from '../components/navBar/NavBar';
 import ProductContainer from '../components/products/ProductContainer';
 import ItemDetailContainer from '../components/products/ItemDetailContainer';
 import Cart from '../components/cart/Cart';
-import Hero from '../utils/Hero';
 import CartContextProvider from '../components/cart/CartContext';
+import Footer from '../components/footer/Footer';
+import Hero from '../components/hero/Hero';
+import Nosotros from './nosotros/Nosotros';
 
 const Home = () => {
     return (
@@ -19,7 +22,9 @@ const Home = () => {
                     <Route path='/category/:categoryID' element={<ProductContainer />} />
                     <Route path='/item/:itemID' element={<ItemDetailContainer />} />
                     <Route path='/cart' element={<Cart />} />
+                    <Route path='/aboutus' element={<Nosotros />} />
                 </Routes>
+                <Footer />
             </BrowserRouter>
         </CartContextProvider>
     )
