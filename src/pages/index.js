@@ -8,8 +8,9 @@ import ItemDetailContainer from '../components/products/ItemDetailContainer';
 import Cart from '../components/cart/Cart';
 import CartContextProvider from '../components/cart/CartContext';
 import Footer from '../components/footer/Footer';
-import Hero from '../components/hero/Hero';
 import Nosotros from './nosotros/Nosotros';
+import HomePage from '../components/homePage/HomePage';
+
 
 const Home = () => {
     return (
@@ -17,7 +18,7 @@ const Home = () => {
             <BrowserRouter>
                 <NavBar />
                 <Routes>
-                    <Route path='/' element={<Hero />} />
+                    <Route path='/' element={<HomePage />} />
                     <Route path='/shop' element={<ProductContainer />}/>
                     <Route path='/category/:categoryID' element={<ProductContainer />} />
                     <Route path='/item/:itemID' element={<ItemDetailContainer />} />
