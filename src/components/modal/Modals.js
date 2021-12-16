@@ -1,25 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Modal, Button} from 'react-bootstrap';
+import { buttonCancel, buttonConfirm, modalP, modalTitle } from './modal.module.scss'
 
-const Modals = ({show, handleClose}) => {
-        // const [show, setShow] = useState(false);
-
-        // const handleClose = () => setShow(false);
-        // const handleShow = () => setShow(true);
-
+const Modals = ({show, handleClose, handleCancel, modalText, botonText}) => {
         return (
             <>
-                <Modal show={show} onHide={handleClose}>
+                <Modal show={show} onHide={handleCancel} backdrop="static" keyboard={false}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title className={modalTitle}>¡Atención!</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    <Modal.Body>
+                        <p className={modalP}>{modalText}</p>
+                    </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={handleClose}>
-                            Close
+                        <Button className={buttonCancel} variant="secondary" onClick={handleCancel}>
+                            Cancelar
                         </Button>
-                        <Button variant="primary" onClick={handleClose}>    
-                            Save Changes
+                        <Button className={buttonConfirm} onClick={handleClose}>    
+                            {botonText}
                         </Button>
                     </Modal.Footer>
                 </Modal>

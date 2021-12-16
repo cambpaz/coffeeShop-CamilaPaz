@@ -1,14 +1,27 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { CartContext } from './CartContext'
 import CartItem from './CartItem';
 import { collection, doc, setDoc, updateDoc, increment } from "firebase/firestore";
 import { Link } from 'react-router-dom'
 import db from '../../utils/firebaseConfig';
-
+import Modals from '../modal/Modals';
 
 const Cart = () => {
+
     const context = useContext(CartContext);
 
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => {
+        setShow(false);
+        context.emptyCart()
+    }
+    const handleCancel = () => {
+        setShow(false);
+    }
+    const confirmaDelete = () => {
+        setShow(true);
+    }
     const createOrder = () => {
         let order = {
             buyer: {
@@ -25,19 +38,19 @@ const Cart = () => {
             total: context.totalPurchase()
         }
         console.log(order);
-        const createOrderFS = async() => {
-        const newOrderRef = doc(collection(db, "orders"));
-        await setDoc(newOrderRef, order);
-        return newOrderRef;
+        const createOrderFS = async () => {
+            const newOrderRef = doc(collection(db, "orders"));
+            await setDoc(newOrderRef, order);
+            return newOrderRef;
         }
         createOrderFS()
             .then(result => alert("TU ORDEN DE COMPRA TIENE EL ID: " + result.id))
             .catch(err => console.log(err))
 
-        context.cart.forEach(async(item) => {
+        context.cart.forEach(async (item) => {
             const productRef = doc(db, "products", item.idProduct);
             await updateDoc(productRef, {
-            stock: increment(-item.qtyProduct)
+                stock: increment(-item.qtyProduct)
             });
 
         })
@@ -68,7 +81,7 @@ const Cart = () => {
                 {
                     context.cart.length === 0
                         ? <Link to="/shop"><div className="center"><button className="btnCarrito">Comenza la experienza Roaster</button></div></Link>
-                        : <div className="center"><button className="btnCantidad" onClick={() => context.emptyCart()}>VACIAR CARRITO</button></div>
+                        : <div className="center"><button className="btnCantidad" onClick={confirmaDelete}>VACIAR CARRITO</button></div>
                 }
             </div>
             <div>
@@ -81,6 +94,13 @@ const Cart = () => {
                             <button onClick={createOrder} className="btnCantidad">TERMINAR MI COMPRA</button>
                         </div>
                         : <p></p>
+                }
+            </div>
+            <div>
+                {
+                    show === true
+                        ? <Modals show={show} handleClose={handleClose} handleCancel={handleCancel} botonText={'Sí, estoy seguro'} modalText={'¿Esta seguro que quiere vaciar su carrito?'} />
+                        : <div></div>
                 }
             </div>
         </>

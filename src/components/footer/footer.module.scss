@@ -1,0 +1,25 @@
+footer {
+    margin: 200px 80px 80px 80px;
+    background-color: #2C343E;
+    display: flex;
+    align-items: center;
+    height:  120px;
+    border-radius: .3125rem;
+    & img {
+        height: 1.625rem;
+        width: 14.75rem;
+        margin-left: 85px;
+        margin-right: 5.5625rem;
+
+    }
+    & p {
+        font-family: "Barlow", sans-serif;
+        font-size: .8rem;
+        font-weight: 700;
+        line-height: 15px;
+        cursor: pointer;
+        opacity: 0.7;
+        color: rgba(131, 136, 143, 1);
+        padding: 1.625rem 2rem 0 2rem;
+    }
+}
