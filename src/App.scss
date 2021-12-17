@@ -1,3 +1,6 @@
+//ESTILOS GLOBALES
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +16,8 @@ ul li {
 }
 
 a {
-    text-decoration: none!important;
-    color: black!important;
+    text-decoration: none !important;
+    color: black !important;
 }
 
 header {
@@ -88,11 +91,7 @@ header {
 
 .category {
     padding: 2rem;
-}
-
-.category.active {
-    font-size: 1.45rem;
-    text-decoration: underline;
+    margin: 0;
 }
 
 .btnRosa {
@@ -124,4 +123,238 @@ header {
     font-size: 1.1rem;
     font-family: 'Fraunces', sans-serif;
     border-radius: 2px;
-  }
+}
+
+.alert {
+    background-color: #FDD6BA;
+    font-size: 1rem;
+    margin-top: .9rem;
+    font-family: Barlow;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//ALERT MESSAGES
+.alert-shown {
+    opacity: 1;
+    transition: all 250ms linear;
+}
+
+.alert-hidden {
+    opacity: 0;
+    transition: all 250ms linear 2s;
+}
+
+
+//ITEM COUNT STYLES
+.contenedor-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.cantidad {
+    padding: 5px;
+    margin: 0 5rem 0 5rem;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.stock-disponible {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 400;
+    font-size: .75rem;
+    padding: .5rem;
+}
+
+.contenedor-detalles {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.contenedor-detalles img {
+    width: 600px;
+    margin-right: 5rem;
+}
+
+.contenedor-detalles h2 {
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+.contenedor-categorias {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.25rem;
+    background: rgba(253, 214, 186, 1);
+    width: 100%;
+}
+
+.producto-descripcion {
+    height: 78px;
+    width: 255px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.checkout {
+    font-family: 'Barlow', sans-serif;
+    background-color: #0E8784;
+    border: none;
+    cursor: pointer;
+    padding: .45rem .825rem;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Fraunces', sans-serif;
+}
+
+/* CARRITO */
+.text-carrito {
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+}
+
+.contenedor-item-cart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+}
+
+.contenedor-item-cart>* {
+    padding: 1rem;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.contenedor-item-cart img {
+    width: 10rem;
+    padding: 0;
+}
+
+.btnEliminar {
+    background-color: #0E8784;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Fraunces', sans-serif;
+}
+
+.ordenSummary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 15rem;
+    margin-top: 2rem;
+    border: 1px solid black;
+    margin: 3rem 20rem;
+}
+
+.ordenSummary>* {
+    font-size: 1.5rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+.btnCantidad:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+
+// ABOUT US PAGE
+.hero-aboutUs {
+    background-image: url(../src/assets/image-hero-whitecup.jpg);
+    height: 80vh;
+    background-size: cover;
+    margin: 0 5rem;
+    border-radius: 1rem;
+}
+
+.container-commitment {
+    display: flex;
+    margin: 10.5rem;
+}
+
+.container-commitment img {
+    height: 520px;
+    width: 445px;
+    border-radius: 5px;
+}
+
+.text-commitment {
+    margin: 5.8125rem;
+}
+
+.text-commitment h3 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 48px;
+    margin-bottom: 32px;
+}
+
+.text-commitment p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+
+//LOADER 
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.loader {
+    border: 16px solid #e3e3e3;
+    border-top: 16px solid #0E8784;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-top: 5rem;
+    animation: spin 1s linear infinite;
+}
+
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

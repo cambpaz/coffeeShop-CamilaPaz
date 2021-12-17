@@ -3,7 +3,6 @@ import { contenedorChoose, contenedorReasons, imgTruck } from './homePage.module
 import bestQuality from '../../assets/icon-coffee-bean.svg'
 import gift from '../../assets/icon-gift.svg'
 import truck from '../../assets/icon-truck.svg'
-
 import Hero from '../hero/Hero';
 
 

@@ -9,7 +9,6 @@ const Item = (props) => {
                 <img src={props.image} alt={props.product}/>
                 <p>{props.product}</p>
                 <p> $ {props.price}</p>
-                {/* BOTON QUE LLEVARA A LA VISTA INDIVIDUAL DE CADA PRODUCTO */}
                 <Link to={`/item/${props.id}`}><button className="btnRosa">Ver detalles</button> </Link> 
             </div>
         </>

@@ -11,13 +11,17 @@ const Cart = () => {
     const context = useContext(CartContext);
 
     const [show, setShow] = useState(false);
+    const [showOrder, setShowOrder] = useState(false);
+
 
     const handleClose = () => {
         setShow(false);
+        setShowOrder(false);
         context.emptyCart()
     }
     const handleCancel = () => {
         setShow(false);
+        setShowOrder(false);
     }
     const confirmaDelete = () => {
         setShow(true);
@@ -44,7 +48,9 @@ const Cart = () => {
             return newOrderRef;
         }
         createOrderFS()
-            .then(result => alert("TU ORDEN DE COMPRA TIENE EL ID: " + result.id))
+            .then(result => {
+                console.log(result);
+                setShowOrder(true)})
             .catch(err => console.log(err))
 
         context.cart.forEach(async (item) => {
@@ -100,6 +106,13 @@ const Cart = () => {
                 {
                     show === true
                         ? <Modals show={show} handleClose={handleClose} handleCancel={handleCancel} botonText={'Sí, estoy seguro'} modalText={'¿Esta seguro que quiere vaciar su carrito?'} />
+                        : <div></div>
+                }
+            </div>
+            <div>
+                {
+                    showOrder === true
+                        ? <Modals show={showOrder} handleClose={handleClose} handleCancel={handleCancel} botonText={'¡Genial!'} modalText={`¡Su pedido Roaster ha sido recibido! Será enviado a preparación pronto. Gracias por confiar en nosotros.`}/>
                         : <div></div>
                 }
             </div>

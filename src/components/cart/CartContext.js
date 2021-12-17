@@ -20,13 +20,11 @@ const CartContextProvider = ({children}) => {
                     qtyProduct: cantidad
                 }
             ]);
-            alert("Se agrego al carrito " + cantidad + ` de ${product.product}`);
         } else {
             let confirmacion = window.confirm('Ya tienes este producto en tu carrito, quieres agregar otro?')
             if (confirmacion) {
                 foundItem.qtyProduct += cantidad;
                 setCart([...cart])
-                alert("Se agrego al carrito " + cantidad + ` de ${product.product}`);
             }
         }
     }
