@@ -17,7 +17,7 @@ const Home = () => {
             <BrowserRouter>
                 <NavBar />
                 <Routes>
-                    <Route path='/' element={<HomePage />} />
+                    <Route path='/coffeeShop-CamilaPaz' element={<HomePage />} />
                     <Route path='/shop' element={<ProductContainer />}/>
                     <Route path='/category/:categoryID' element={<ProductContainer />} />
                     <Route path='/item/:itemID' element={<ItemDetailContainer />} />
