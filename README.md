@@ -1,54 +1,36 @@
-# CoffeeRoasters - eCommerce para el curso de ReactJs en CoderHouse
+# CoffeeRoasters - eCommerce for the Coderhouse's ReactJS course
 
-_Acá va un párrafo que describa lo que es el proyecto_
+![Project's Screenshot](https://res.cloudinary.com/db8t2tgov/image/upload/v1639827478/Captura_de_Pantalla_2021-12-18_a_la_s_12.35.07_qt1jxp.png)
 
-## Comenzando 🚀
+This is the project I built for my ReactJS course. It consist of a coffee shop ecommerce where the user can buy premium blends of coffee and other accessories.
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+The design was inspired and adapted from [this Frontend Mentor challenge](https://www.frontendmentor.io/challenges/coffeeroasters-subscription-site-5Fc26HVY6)
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+## Starting off 🚀
 
+You can fork this proyect if you want to have a copy of it in your own repository. If you want to have a copy in your local memory, you should either clone it or download the ZIP file.
+### Pre-requisites 📋
 
-### Pre-requisitos 📋
+Node version used: 16.14
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+## Deployment 📦
 
-```
-Da un ejemplo
-```
-## Despliegue 📦
+I used GitHub pages to deploy this proyect.
 
-_Agrega notas adicionales sobre como hacer deploy_
+## Built with 🛠️
 
-## Construido con 🛠️
+This poyect uses the following technologies:
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+* [HTML](https://developer.mozilla.org/es/docs/Web/HTML) 
+* [Scss](https://sass-lang.com/) 
+* [React](https://es.reactjs.org/) 
+* [ReactBootstrap](https://react-bootstrap.github.io/) 
+## Author ✒️
 
-* [HTML](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [SCSS](https://maven.apache.org/) - Manejador de dependencias
-* [REACT](https://rometools.github.io/rome/) - Usado para generar RSS
+* **Camila Belen Paz** - Front-end developer student 
+LinkedIn: https://www.linkedin.com/in/camilapaz-frontend/
+Github: https://github.com/cambpaz
 
-## Wiki 📖
+x`x## Gratitude comments 🎁
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-x`x## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+* I want to give a special thanks to my profesor Alex Marin Mendez and my tutor Uriel Rivero who helped me through my whole process of building my first website with React. May we find again as colleages another time :) 
