@@ -27,10 +27,10 @@ This poyect uses the following technologies:
 * [ReactBootstrap](https://react-bootstrap.github.io/) 
 ## Author ✒️
 
-* **Camila Belen Paz** - Front-end developer student 
-LinkedIn: https://www.linkedin.com/in/camilapaz-frontend/
-Github: https://github.com/cambpaz
+* **Camila Belen Paz** - Front-end developer student - [cambpaz](https://github.com/cambpaz)
 
-x`x## Gratitude comments 🎁
+You can access my LinkedIn [here](https://www.linkedin.com/in/camilapaz-frontend/)
+
+## Gratitude comments 🎁
 
 * I want to give a special thanks to my profesor Alex Marin Mendez and my tutor Uriel Rivero who helped me through my whole process of building my first website with React. May we find again as colleages another time :) 
