@@ -49,7 +49,7 @@ const Cart = () => {
         }
         createOrderFS()
             .then(result => {
-                console.log(result);
+                console.log(result.id);
                 setShowOrder(true)})
             .catch(err => console.log(err))
 

@@ -11,7 +11,7 @@ The design was inspired and adapted from [this Frontend Mentor challenge](https:
 You can fork this proyect if you want to have a copy of it in your own repository. If you want to have a copy in your local memory, you should either clone it or download the ZIP file.
 ### Pre-requisites 📋
 
-Node version used: 16.14
+Node version used: 16.13
 
 ## Deployment 📦
 
