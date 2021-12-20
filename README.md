@@ -15,7 +15,8 @@ Node version used: 16.13
 
 ## Deployment 📦
 
-I used GitHub pages to deploy this proyect.
+I used Vercel to deploy this proyect.
+You can find the deployed website [here](https://coffeeroasters-e09jm3j5a-cambpaz.vercel.app/)
 
 ## Built with 🛠️
 
