@@ -6,7 +6,7 @@ import truck from '../../assets/icon-truck.svg'
 import Hero from '../hero/Hero';
 
 
-const HomePage = () => {
+export const HomePage = () => {
     return (
         <>
         <Hero />
@@ -39,4 +39,3 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
