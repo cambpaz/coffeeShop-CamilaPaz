@@ -8,7 +8,7 @@ import Cart from '../components/cart/Cart';
 import CartContextProvider from '../components/cart/CartContext';
 import Footer from '../components/footer/Footer';
 import Nosotros from './nosotros/Nosotros';
-import { HomePage } from './components/homePage/HomePage'
+import { HomePage } from './components/homePage/Home'
 
 
 const Home = () => {
